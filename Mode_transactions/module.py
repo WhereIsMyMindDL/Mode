@@ -374,8 +374,14 @@ class Nitro(Account):
     def get_transaction_data(self, toChain):
         global send_list
 
-        value_eth = round(random.uniform(float(value_nitro_bridge[0]), float(value_nitro_bridge[1])), decimal_places)
-        value_wei = self.w3.to_wei(value_eth, 'ether')
+        if type(value_nitro_bridge[0]) == str:
+            percent = round(random.uniform(float(value_nitro_bridge[0]), float(value_nitro_bridge[1])), decimal_places) / 100
+            balance = self.get_balance()
+            value_eth = balance['balance'] * percent
+            value_wei = int(balance['balance_wei'] * percent)
+        else:
+            value_eth = round(random.uniform(float(value_nitro_bridge[0]), float(value_nitro_bridge[1])), decimal_places)
+            value_wei = self.w3.to_wei(value_eth, 'ether')
 
         url = "https://api-beta.pathfinder.routerprotocol.com/api/v2/quote"
         chain_ids = {
