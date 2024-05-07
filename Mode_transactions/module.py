@@ -44,7 +44,7 @@ class Claim_airdrop(Account):
         self.session.headers['user-agent'] = random_ua()
         self.proxy = proxy
         if self.proxy != None:
-            self.session.proxies.update({'http': self.proxy, 'https': self.proxy})
+            self.session.proxies.update({'http': self.proxy})
 
     @retry
     def claim(self):
