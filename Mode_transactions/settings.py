@@ -10,7 +10,7 @@ delay_transactions = [3, 4]                                         # миним
 RETRY_COUNT = 2                                                     # кол-во попыток при возникновении ошибок
 
 slippage = 5                                                        # слипейдж для свапов USDT и USDC
-count_swaps = [1, 1]                                                # количество свапов для SwapMode, IZUMI, SupSwap, KimExchange
+count_swaps = [1, 1]                                                # количество свапов для SwapMode, SupSwap, KimExchange
 swap_list = ['MOLTEN', 'ezETH', 'SMD', 'MODI', 'USDC', 'USDT']      # список токенов для 100% свапа в эфир на SwapMode, можно добавить новые в module.py, Swap_to_eth
 deposit_chain_from_Mode = 'Base'                                    # сеть для вывода из MODE и депозита на биржевой адрес, Nitro_from_Mode, Okex_deposit
 value_nitro_bridge = [0.0031, 0.0032]                               # минимальное и максимальное кол-во ETH для бриджа через нитро, Nitro_to_Mode, Nitro_from_Mode
