@@ -1,18 +1,18 @@
 # Mode
 
 Модули:
-Okex_withdrawal | withdraw from Okex
-Claim_airdrop | claim airdrop
-Nitro_to_Mode | bridge to Mode with Nitro
-LayerBank | collateral and supply
-SwapMode | swap (USDT, USDC, ezETH, MODI, MOLTEN, SMD)
-IONIC | wrap, approve, supply ETH
-Ironclad | supply, borrow (USDT, USDC)
-SupSwap | swap (USDT, USDC)
-KimExchange | swap (USDT, USDC)
-Nitro_from_Mode | bridge from Mode with Nitro
-Okex_deposit | deposit 
-Swap_to_eth | swap all tokens from tokens to eth
+1. Okex_withdrawal | withdraw from Okex
+2. Claim_airdrop | claim airdrop
+3. Nitro_to_Mode | bridge to Mode with Nitro
+4. LayerBank | collateral and supply
+5. SwapMode | swap (USDT, USDC, ezETH, MODI, MOLTEN, SMD)
+6. IONIC | wrap, approve, supply ETH
+7. Ironclad | supply, borrow (USDT, USDC)
+8. SupSwap | swap (USDT, USDC)
+9. KimExchange | swap (USDT, USDC)
+10. Nitro_from_Mode | bridge from Mode with Nitro
+11. Okex_deposit | deposit
+12. Swap_to_eth | swap all tokens from tokens to eth
 
 # 🔧 Инструкция:
 
