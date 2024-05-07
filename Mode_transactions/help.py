@@ -111,9 +111,9 @@ class Account:
         self.ChainName = rpc
 
         if self.proxy != None:
-            self.w3 = Web3(Web3.HTTPProvider(RPC[rpc], request_kwargs={"proxies": {'https': "http://" + self.proxy, 'http': "http://" + self.proxy}}))
-
-        self.w3 = Web3(Web3.HTTPProvider(RPC[rpc]))
+            self.w3 = Web3(Web3.HTTPProvider(RPC[rpc], request_kwargs={"proxies": {'http': "http://" + self.proxy}}))
+        else:
+            self.w3 = Web3(Web3.HTTPProvider(RPC[rpc]))
         self.account = self.w3.eth.account.from_key(private_key)
         self.address = self.account.address
         self.scan = SCANS[CHAIN_NAMES[self.w3.eth.chain_id]]
